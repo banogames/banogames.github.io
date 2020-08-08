@@ -3,19 +3,19 @@
 		{
 			"id": 0,
 			"url" : "https://play.google.com/store/apps/details?id=bano.OnetConnectAnimals.PikachuClassic",
-			"icon" : "https://txbac98.github.io/Image/NewGame/OnetAnimals.png",
+			"icon" : "https://banogames.github.io/Sources/Images/Games/OnetAnimals.png",
 			"title" : "Onet Animals"		
 		},
 		{
 			"id": 1,
 			"url" : "https://play.google.com/store/apps/details?id=bano.FruitSlotMachine.XengHoaQua",
-			"icon" : "https://txbac98.github.io/Image/NewGame/FruitSlot.png",
+			"icon" : "https://banogames.github.io/Sources/Images/Games/FruitSlot.png",
 			"title" : "Fruit Slot"
 		},
 		{
 			"id": 2,
 			"url" : "https://play.google.com/store/apps/details?id=bano.LuckyFruits.FullFruitSlotMachine1980s",
-			"icon" : "https://txbac98.github.io/Image/NewGame/LuckyFruits.png",
+			"icon" : "https://banogames.github.io/Sources/Images/Games/LuckyFruits.png",
 			"title" : "Lucky Fruits"
 		}
 	]
