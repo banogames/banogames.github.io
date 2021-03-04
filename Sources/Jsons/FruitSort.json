@@ -2,9 +2,9 @@
 	"datas" : [
 		{
 			"id": 0,
-			"url" : "https://play.google.com/store/apps/details?id=bano.OnetConnectAnimals.PikachuClassic",
-			"icon" : "https://banogames.github.io/Sources/Images/Games/OnetAnimals.png",
-			"title" : "Onet Animals"		
+			"url" : "https://play.google.com/store/apps/details?id=bano.FruitLink2.FruitBox",
+			"icon" : "https://banogames.github.io/Sources/Images/Games/FruitLink2.png",
+			"title" : "No Level Map"		
 		},
 		{
 			"id": 1,
@@ -14,9 +14,9 @@
 		},
 		{
 			"id": 2,
-			"url" : "https://play.google.com/store/apps/details?id=bano.FruitLink2.FruitBox",
-			"icon" : "https://banogames.github.io/Sources/Images/Games/FruitLink2.png",
-			"title" : "No Level Map"
+			"url" : "https://play.google.com/store/apps/details?id=bano.JapaneseGirl.AnimeJigsawPuzzle",
+			"icon" : "https://banogames.github.io/Sources/Images/Games/AnimeJigsaw.png",
+			"title" : "Anime Jigsaw"	
 		}
 	]
 	
