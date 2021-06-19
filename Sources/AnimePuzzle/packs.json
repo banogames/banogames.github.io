@@ -1,9 +1,46 @@
 {
 	"packDatas": [
 		{
+			"name": "Cool",
+			"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg",
+			"price": 20,
+			"photoDatas": [
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_0.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_0.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				},
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_1.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_1.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				},
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_2.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_2.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				},
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_3.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_3.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				},
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_4.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_4.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				},
+				{
+					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Cool/icon_cool_5.jpg",
+					"imageUrl": "https://banogames.github.io/Sources/AnimePuzzle/Images/Cool/image_cool_5.jpg",
+					"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_2.jpg"
+				}
+			]
+		},
+		{
 			"name": "Face",
 			"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_3.jpg",
-			"price": 50,
+			"price": 20,
 			"photoDatas": [
 				{
 					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Face/icon_face_0.jpg",
@@ -40,7 +77,7 @@
 		{
 			"name": "Couples",
 			"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_4.jpg",
-			"price": 50,
+			"price": 20,
 			"photoDatas": [
 				{
 					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Couple/icon_couple_0.jpg",
@@ -77,7 +114,7 @@
 		{
 			"name": "Color full",
 			"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_5.jpg",
-			"price": 50,
+			"price": 20,
 			"photoDatas": [
 				{
 					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Color/icon_color_0.jpg",
@@ -119,7 +156,7 @@
 		{
 			"name": "Beautifull",
 			"bannerUrl": "https://banogames.github.io/Sources/AnimePuzzle/Banners/banner_6.jpg",
-			"price": 50,
+			"price": 20,
 			"photoDatas": [
 				{
 					"iconUrl": "https://banogames.github.io/Sources/AnimePuzzle/Icons/Beautifull/icon_beautifull_0.jpg",
