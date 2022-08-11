@@ -102,3 +102,4 @@ pokkt.com, 6246, RESELLER, c45702d9311e25fd
 pokkt.com, 7606, RESELLER, c45702d9311e25fd
 spotx.tv, 117872, RESELLER, 7842df1d2fe2db34
 spotxchange.com, 117872, RESELLER, 7842df1d2fe2db34
+videoheroes.tv, 212499, RESELLER, 064bc410192443d8
