@@ -212,7 +212,7 @@
                                 },
                                 {
                                     text: 'Accordion',
-                                    value: '[accordion title="Accordian title"]<br><br>[accordion-item title="Accordion Item 1 Title"]<br>Accordion Item 1 Content Goes Here<br>[/accordion-item]<br><br>[accordion-item title="Accordion Item 1 Title"]<br>Accordion Item 1 Content Goes Here<br>[/accordion-item]<br><br>[accordion-item title="Accordion Item 1 Title"]<br> Accordion Item 1 Content Goes Here<br> [/accordion-item]<br><br>[/accordion]',
+                                    value: '[accordion title="Accordion title"]<br><br>[accordion-item title="Accordion Item 1 Title"]<br>Accordion Item 1 Content Goes Here<br>[/accordion-item]<br><br>[accordion-item title="Accordion Item 1 Title"]<br>Accordion Item 1 Content Goes Here<br>[/accordion-item]<br><br>[accordion-item title="Accordion Item 1 Title"]<br> Accordion Item 1 Content Goes Here<br> [/accordion-item]<br><br>[/accordion]',
                                     onclick: function(e) {
                                         e.stopPropagation();
                                         editor.insertContent(this.value());
@@ -636,8 +636,9 @@ function ux_add_uxbanner(editor){
             label: 'Background Image',
             text: 'Select image',
             icon: 'icon dashicons-format-gallery',
-             onclick: function() {
-                     UXgalleryModal();
+             onclick: function(e) {
+               e.preventDefault();
+               UXgalleryModal();
             },
         },
         {
@@ -761,8 +762,9 @@ function ux_add_section(editor){
             label: 'Background Image',
             text: 'Select image',
             icon: 'icon dashicons-format-gallery',
-             onclick: function() {
-                     UXgalleryModal();
+             onclick: function(e) {
+               e.preventDefault();
+               UXgalleryModal();
             },
         },
         {
@@ -930,8 +932,6 @@ var uxAnimations = [
 function UXgalleryModal(){
     // Uploading files
 var file_frame;
- 
-    event.preventDefault();
  
     // If the media frame already exists, reopen it.
     if ( file_frame ) {

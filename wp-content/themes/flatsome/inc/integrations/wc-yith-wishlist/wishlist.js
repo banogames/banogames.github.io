@@ -1,51 +1,72 @@
-jQuery( document ).ready(function($) {
+Flatsome.behavior('wishlist', {
+  attach: function (context) {
+    jQuery('.wishlist-button', context).each(function (index, element) {
+      'use strict'
 
-	"use strict";
+      jQuery(element).on('click', function (e) {
+        var $this = jQuery(this)
+        // Browse wishlist
+        if ($this.parent().find('.yith-wcwl-wishlistexistsbrowse, .yith-wcwl-wishlistaddedbrowse').length) {
+          window.location.href = $this.parent().find('.yith-wcwl-wishlistexistsbrowse a, .yith-wcwl-wishlistaddedbrowse a').attr('href')
+          return
+        }
+        $this.addClass('loading')
+        // Delete or add item (only one of both is present).
+        $this.parent().find('.delete_item').click()
+        $this.parent().find('.add_to_wishlist').click()
 
-	$('.wishlist-button').on('click', function(e){
+        e.preventDefault()
+      })
+    })
 
-		if($(this).parent().find('.yith-wcwl-wishlistexistsbrowse').hasClass('show')){
-			var link = $(this).parent().find('.yith-wcwl-wishlistexistsbrowse a').attr('href');
-			window.location.href = link;
-			return;
-		}
+    markAdded()
+  }
+})
 
-		$(this).addClass('loading');
-		$(this).parent().find('.add_to_wishlist').click();
-		e.preventDefault();
-	});
+jQuery(document).ready(function () {
+  var flatsomeAddToWishlist = function () {
+    jQuery('.wishlist-button').removeClass('loading')
+    markAdded()
 
-	var flatsome_add_to_wishlist = function() {
-		$('.wishlist-button').removeClass('loading');
-		$('.wishlist-button').addClass('wishlist-added');
+    jQuery.ajax({
+      beforeSend: function () {
 
-		$.ajax({
-            beforeSend: function () {
- 
-            },
-            complete  : function () {
- 
-            },
-            data      : {
-                action: 'flatsome_update_wishlist_count'
-            },
-            success   : function (data) {
-				$('i.wishlist-icon').addClass('added');
-				if(data == 0){
-					$('i.wishlist-icon').removeAttr('iconLabel');
-				} else if(data == 1){
-					$('i.wishlist-icon').attr('data-icon-label','1');
-				} else {
-					$('i.wishlist-icon').attr('data-icon-label',data);
-				}
-				setTimeout(function(){
-					$('i.wishlist-icon').removeClass('added');
-				}, 500);
-            },
+      },
+      complete: function () {
 
-            url: yith_wcwl_l10n.ajax_url
-        });
-    };
+      },
+      data: {
+        action: 'flatsome_update_wishlist_count',
+      },
+      success: function (data) {
+        var $icon = jQuery('i.wishlist-icon')
+        $icon.addClass('added')
+        if (data == 0) {
+          $icon.removeAttr('data-icon-label')
+        }
+        else if (data == 1) {
+          $icon.attr('data-icon-label', '1')
+        }
+        else {
+          $icon.attr('data-icon-label', data)
+        }
+        setTimeout(function () {
+          $icon.removeClass('added')
+        }, 500)
+      },
 
-    $('body').on( 'added_to_wishlist removed_from_wishlist', flatsome_add_to_wishlist);
-});
+      url: yith_wcwl_l10n.ajax_url,
+    })
+  }
+
+  jQuery('body').on('added_to_wishlist removed_from_wishlist', flatsomeAddToWishlist)
+})
+
+function markAdded () {
+  jQuery('.wishlist-icon').each(function () {
+    var $this = jQuery(this)
+    if ($this.find('.yith-wcwl-wishlistexistsbrowse, .yith-wcwl-wishlistaddedbrowse').length) {
+      $this.find('.wishlist-button').addClass('wishlist-added')
+    }
+  })
+}
